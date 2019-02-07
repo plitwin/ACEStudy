@@ -1,7 +1,47 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_LayoutAlt.cshtml";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+    <div class="card">
+        <img class="card-img" src="~/images/Home/Home_BannerImage.png" 
+            alt="Image of Women at a Exercise Bar">
+        <div class="card-img-overlay" style="padding-top: 20%;">
+            <div>
+                <img src="~/images/Home/AnActiveLifestyle_script.png" 
+                alt="An Active Lifestyle Image"  style="max-width:30%;"/>
+            </div>
+            <div>
+                <h5>REDUCES RISK FOR <br />BREAST CANCER</h5>
+                <button type="submit" class="btn btn-info font-weight-bold">JOIN THE STUDY</button>
+            </div>
+        </div>        
+    </div>
 
-<p>Use this area to provide additional information.</p>
+<div class="whiteBox row pt-4 pb-4"> 
+    <div class="col-sm-4">
+        <div class="text-left">
+            <i class="fas fa-angle-double-down" style="color:#48D8C1"></i>
+            <br />
+            ACE will investigate how a 
+            45-minute bout of moderate
+            exercise can affect the biology
+            of the human body. This could
+            help explain how exercise
+            reduces breast cancer risk.
+            <br /> 
+
+            <button type="submit" class="btn btn-info font-weight-bold">LEARN MORE</button>
+        </div>
+    </div>
+    <div class="col-sm-8">
+            <img src="~/images/Home/YouMayBeAbletoJoin_Script.png" 
+            alt="You may be able to join if..."  style="max-width:50%;"/>
+        <ul>
+            <li>You are female, and between 18 and 75 years old</li>
+            <li>You can visit our exercise center for two clinic visits at the
+                Fred Hutchinson Cancer Research Center’s Prevention
+                Center at South Lake Union.</li>
+        </ul>
+        <button type="submit" class="btn btn-info font-weight-bold">ELIGIBILITY</button>
+    </div>
+</div> <!-- lower half-->
