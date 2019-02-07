@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css">
+
+    <title>@ViewBag.Title</title>
+  </head>
+  <body>
+    <div class="container-fluid body-content ml-0 mr-0 pl-3 pr-3" style="margin-top:-30px;" id="containerMain">
+            <div class="text-center">
+            <img src="~/images/Home/AceLogo.png" class="img-fluid" alt="ACE Logo" style="max-width:20%; height: auto;" />
+            </div>
+            <hr style="border-color:black;">
+            <div class="text-uppercase font-weight-bold text-left" role="group">
+                <a class='btn btn-info mr-2 @(ViewBag.Title=="Home" ? "active": "")'    href='~/home/index'>HOME</a>
+                <a class='btn btn-info mr-2 @(ViewBag.Title=="About" ? "active": "")'   href='~/home/about'>ABOUT</a>
+                <a class='btn btn-info mr-2 @(ViewBag.Title=="Eligibility" ? "active": "")'   href='~/home/eligibility'>ELIGIBILITY</a>
+                <a class='btn btn-info mr-2 @(ViewBag.Title=="Contact" ? "active": "")' href='~/home/contact'>CONTACT US</a>
+                <a class='btn btn-info      @(ViewBag.Title=="Team" ? "active": "")'    href='~/home/team'>MEET THE TEAM</a>
+            </div>
+            <hr style="border-color:black;">         
+        @RenderBody()
+
+    <footer class="footer container-fluid text-center" style="background-color:#48D8C1">
+        <!-- <img src="~/images/FredHutch-h-tag-4col-rgb.png" alt="Fred Hutch logo"/> -->
+        <span class="text-white">&copy ACE Study @DateTime.Today.Year. All rights reserved.</span>
+    </footer>        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)  
+</body>
+</html>
