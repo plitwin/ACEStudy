@@ -17,16 +17,23 @@
             <div class="text-center">
             <img src="~/images/Home/AceLogo.png" class="img-fluid" alt="ACE Logo" style="max-width:20%; height: auto;" />
             </div>
-            <hr style="border-color:black;">
-            <div class="text-uppercase font-weight-bold text-left" role="group">
-                <a class='btn btn-info mr-2 @(ViewBag.Title=="Home" ? "active": "")'    href='~/home/index'>HOME</a>
-                <a class='btn btn-info mr-2 @(ViewBag.Title=="About" ? "active": "")'   href='~/home/about'>ABOUT</a>
-                <a class='btn btn-info mr-2 @(ViewBag.Title=="Eligibility" ? "active": "")'   href='~/home/eligibility'>ELIGIBILITY</a>
-                <a class='btn btn-info mr-2 @(ViewBag.Title=="Contact" ? "active": "")' href='~/home/contact'>CONTACT US</a>
-                <a class='btn btn-info      @(ViewBag.Title=="Team" ? "active": "")'    href='~/home/team'>MEET THE TEAM</a>
-            </div>
-            <hr style="border-color:black;">  
-                   
+            <hr style="border-color:black;margin-bottom:0;">
+            <nav class="navbar navbar-expand-lg navbar-light text-uppercase font-weight-bold">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                        <a class='nav-item nav-link mr-2 @(ViewBag.Title=="Home" ? "active": "")'    href='~/home/index'>HOME</a>
+                        <a class='nav-item nav-link mr-2 @(ViewBag.Title=="About" ? "active": "")'   href='~/home/about'>ABOUT</a>
+                        <a class='nav-item nav-link mr-2 @(ViewBag.Title=="Eligibility" ? "active": "")'   href='~/home/eligibility'>ELIGIBILITY</a>
+                        <a class='nav-item nav-link mr-2 @(ViewBag.Title=="Contact" ? "active": "")' href='~/home/contact'>CONTACT US</a>
+                        <a class='nav-item nav-link      @(ViewBag.Title=="Team" ? "active": "")'    href='~/home/team'>MEET THE TEAM</a>
+    
+                 </div>
+            </<div>
+            </nav>       
+            <hr style="border-color:black;margin-top:0;">  
         @RenderBody()
     </div>
 
