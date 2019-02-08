@@ -1,17 +1,47 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewBag.Title = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<div class="ml-2">
+    <h2 class="greenColor">Contacting the ACE Study</h2>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+    <div class="card mt-2" style="width: 34rem;">
+        <div class="card-header font-weight-bold"><i class="fas fa-mail-bulk"></i> Address</div>
+        <div class="card-body">
+            Fred Hutchinson Cancer Research Center<br />
+            1100 Fairview Ave N<b4 />
+            PO Box 19024<br />
+            Seattle, WA 98109<br />
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+            <br />
+            <i class="fas fa-file-download"></i> 
+            <a href="~/images/pc_directions.pdf" target="_blank">Driving/transit directions the Fred Hutch Prevention Center</a>
+        </div>
+    </div>
+
+    <div class="card mt-3" style="width: 34rem;">
+        <div class="card-header font-weight-bold"><i class="fas fa-envelope"></i> Email</div>
+        <div class="card-body">
+            <a href="mailto:acestudy@fredhutch.org">acestudy@fredhutch.org</a>
+        </div>
+    </div>
+
+    <div class="card mt-3" style="width: 34rem;">
+        <div class="card-header font-weight-bold"><i class="fas fa-phone-volume"></i> Telephone</div>
+        <div class="card-body">
+            <span class="text-primary">888-508-0395 – ext 3460</span>
+        </div>
+    </div>
+        
+    </div>
+    <div class="alert greenColor font-weight-bold mt-3">
+        The ACE Study is funded by the <a href="https://www.bcrf.org" class="greenColor" target="_blank">Breast Cancer Research Foundation.</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(window).on("load", function () {
+            $("body").css("background-color","white");
+        });
+    </script>    
+}

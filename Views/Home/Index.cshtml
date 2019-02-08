@@ -1,25 +1,24 @@
 ﻿@{
     ViewBag.Title = "Home";
-    Layout = "~/Views/Shared/_LayoutAlt.cshtml";
 }
     <div class="card  mb-3">
-        <img class="card-img" src="~/images/Home/Home_BannerImage.png" 
+        <img class="card-img img-fluid" src="~/images/Home/BannerNEW.jpg" 
             alt="Image of Women at a Exercise Bar">
-        <div class="card-img-overlay" style="padding-top: 20%;">
+        <div class="card-img-overlay" style="padding-top: 10%;">
             <div>
-                <img src="~/images/Home/AnActiveLifestyle_script.png" 
-                alt="An Active Lifestyle Image"  style="max-width:30%;"/>
+                <img src="~/images/Home/AnActiveLifestyle_script.png" class="img-fluid"
+                alt="An Active Lifestyle Image"  style="max-width:30%;height:auto;"/>
             </div>
             <div>
                 <h5>REDUCES RISK FOR <br />BREAST CANCER</h5>
-                <button type="submit" class="btn btn-info font-weight-bold">JOIN THE STUDY</button>
+                <a href='~/home/eligibility' class="btn btn-info font-weight-bold">AM I ELIGIBLE?</a>
             </div>
         </div>        
     </div>
 <div class="whiteBox row pt-4 pb-3"> 
     <div class="col-sm-4" >
         <div class="text-left">
-            <i class="fas fa-angle-double-down greenColor"></i>
+            <i class="fas fa-question-circle fa-2x greenColor"></i>
             <br />
             ACE will investigate how a 
             45-minute bout of moderate
@@ -27,15 +26,17 @@
             of the human body. This could
             help explain how exercise
             reduces breast cancer risk.
-            <br /> <br /><br />
+            <br /> <br />
 
             <a class="btn btn-info font-weight-bold" href='~/home/about'>LEARN MORE</a>
          </div>
     </div>
-    <div class="col-sm-1 pr-5"><div style="height:100%;border-right-style:solid;border-width:4px;border-color:#48D8C1"></div></div>
+    <div class="col-sm-1 pr-5">
+        <div style="height:100%;border-right-style:solid;border-width:4px;border-color:#48D8C1"></div>
+    </div>
     <div class="col-sm-6 pl-0">
-            <img src="~/images/Home/YouMayBeAbletoJoin_Script.png" 
-            alt="You may be able to join if..."  style="max-width:50%;"/>
+            <img src="~/images/Home/YouMayBeAbletoJoin_Script.png" class="img-fluid"
+            alt="You may be able to join if..."  style="max-width:50%;height:auto;"/>
         <ul>
             <li>You are female, and between 18 and 75 years old</li>
             <li>You can visit our exercise center for two clinic visits at the
@@ -54,3 +55,11 @@
         <div class="" style="border-bottom-style:solid; border-width:4px;border-color:#46d5c4"></div>
      </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('body').removeClass('bodyWhite').removeClass('bodyAlt');
+        });
+    </script>    
+}

@@ -63,3 +63,5 @@ C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\ACEStudy.dll
 C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\ACEStudy.pdb
 C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\ACEStudy.csproj.CopyComplete
 C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAlt.g.cshtml.cs
+C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eligibility.g.cshtml.cs
+C:\Users\plitwin\Source\repos\ACEStudy\obj\Debug\netcoreapp2.1\Razor\Views\Home\Team.g.cshtml.cs

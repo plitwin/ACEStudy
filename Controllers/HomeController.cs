@@ -10,22 +10,36 @@ namespace ACEStudy.Controllers
 {
     public class HomeController : Controller
     {
+        private string surveyUrl = "https://cdsweb07.fhcrc.org/redcap/surveys/?s=DDNC9RAETN";
+
         public IActionResult Index()
         {
+            ViewBag.SurveyUrl = surveyUrl;
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewBag.SurveyUrl = surveyUrl;
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewBag.SurveyUrl = surveyUrl;
+            return View();
+        }
+        
+        public IActionResult Eligibility()
+        {
+            ViewBag.SurveyUrl = surveyUrl;            
+            return View();
+        }
 
+        
+        public IActionResult Team()
+        {
+            ViewBag.SurveyUrl = surveyUrl;            
             return View();
         }
 
