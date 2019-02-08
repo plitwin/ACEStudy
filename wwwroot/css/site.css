@@ -33,7 +33,27 @@ div .whiteBox
 }
 div .greenBox
 {
-    background-color: #48D8C1;
+    background-color: #46d5c4;
+}
+
+div .blueBox
+{
+    background-color: #29b6b9;
+}
+
+.greenColor
+{
+    color: #46d5c4;
+}
+
+div .blueColor
+{
+    background-color: #29b6b9;
+}
+
+.bolded
+{
+    font-weight: bold;
 }
 
 
