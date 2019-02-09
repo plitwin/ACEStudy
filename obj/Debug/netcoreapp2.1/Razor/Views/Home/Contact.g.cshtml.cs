@@ -65,7 +65,7 @@ using ACEStudy.Models;
             WriteLiteral("<div class=\"col-md-6 mb-5\">\r\n    <div class=\"media p-2\"> \r\n        <div class=\"media-body\">\r\n            ");
             EndContext();
             BeginContext(144, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d1dcd03a64ee4f3a9e88ab5f67a2dfda", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0dcb3dc571594cb491ffa2105e98a0b7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +101,7 @@ using ACEStudy.Models;
                     <br />");
             EndContext();
             BeginContext(959, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6faa049691043799f235c59c0e7aabd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e1504a14f3149d7a98d1cd8078a2c94", async() => {
                 BeginContext(1012, 26, true);
                 WriteLiteral("Driving/transit directions");
                 EndContext();
