@@ -10,7 +10,8 @@ namespace ACEStudy.Controllers
 {
     public class HomeController : Controller
     {
-        private string surveyUrl = "https://cdsweb07.fhcrc.org/redcap/surveys/?s=DDNC9RAETN";
+        //private string surveyUrl = "https://cdsweb07.fhcrc.org/redcap/surveys/?s=DDNC9RAETN";
+        private string surveyUrl = "http://theacestudy.org/home/surveyplaceholder";
 
         public IActionResult Index()
         {
@@ -42,6 +43,12 @@ namespace ACEStudy.Controllers
             ViewBag.SurveyUrl = surveyUrl;            
             return View();
         }
+
+        public IActionResult SurveyPlaceholder()
+        {
+            ViewBag.SurveyUrl = surveyUrl;            
+            return View();
+        } 
 
         public IActionResult Privacy()
         {
